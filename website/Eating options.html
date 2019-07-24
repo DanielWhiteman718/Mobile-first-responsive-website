@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="authors" content="Daniel Whiteman, Chloe Jambor">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="website.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        
+        <title>Eating Options</title>
+        
+        <!-- script to open and close hamburger menu -->
+        <script>
+            function navFunction(){   
+            var x  = document.getElementsByClassName("links")[0];
+            if (x.id ==="opened"){
+                x.id = "unopened";
+                }
+            else {
+                x.id="opened";
+                }
+            }
+        </script>
+        
+    </head>
+	
+    <body>
+	
+        <div class="banner">
+			<header>
+                <!--Hamburger menu -->
+				<img src="img/myLogo.png" alt="Picture" width="50" height="50" >
+				<h1><a href="index.html" id ="myHeader">Students' Union</a></h1>
+			</header>
+        </div>
+		
+        <nav>
+            <a id="menu" href="javascript:void(0);" onclick="navFunction()">
+                <i class="fas fa-bars"></i> 
+            </a>
+            
+            <!-- span used as an inline divider to create a class used in the script -->
+            <span class="links" id="unopened">
+                <a href="index.html" >Home</a>
+                <a href="Eating options.html" class="open">Eating Options</a>
+                <a href="Social.html">Social Events</a>
+                <a href="A week in the life.html">A Week In The Life</a>
+                <a href="Contact us.html">Contact Us</a>
+                <a href="Accessability.html">Accessability/Privacy</a>
+            </span>
+            
+        </nav>
+		
+
+		<main id="wrapper">
+			<h2>Eating At The SU</h2>
+			<div>
+				<aside>
+					<img src="img/unicentral.jpg" alt="Students Eating" width= 500px height= 300px>
+				</aside>
+				<section>
+					<p>There are many eating options in the SU building including cafes, restaurants and more. The building has vegetarian, vegan and gluten free options to accommodate for all students.</p>
+					<p>Interval is a café that serves a range of food and beverages. Options include wine, beer, hot drinks and a selection of tasty food. The café is open from 11am till late. Sometimes in the evening, the venue hosts DJs and music events. This is yet another social event for students. </p>
+					<p>New leaf is a salad bar where you construct your own take away salad or wrap for yourself. This is perfect for vegetarians and vegans. New leaf is open from 11 am to 3:30 pm.</p>
+					<p>Proper Pastry serves Cornish pastries that are handmade so that they stay true to the roots of the Cornish Pasty. The workers are expert bakers to ensure the best pasty. This is open from 10am to 3pm.</p>
+					<p>The View Deli allows you to tuck into a range of vegan, vegetarian and gluten free food for lunch. The deli also serves many cold and hot beverages.</p>
+					<p>Uni central offers quality food such as burgers, pizzas and wraps. Be sure to remember your GeniUS card to receive special offers and discounts.</p>
+					<p>Grill & Go is a campus favourite. Try one of the burritos, hot wraps or salad boxes, all of which are packed with flavour and perfect for those who are busy and have to eat on the go.</p>
+				</section>
+				<aside>
+					<img src="img/unicentral2.jpg" class="secondpicture" width= 500px height= 300px alt="Uni Central">
+				</aside>
+			</div> 
+		</main>
+	<footer>
+		<nav>
+			<a href="home.html"> Home</a>
+			<a href="Contact us.html">Contact Us</a>
+			<a href="Accessability.html">Accessability</a>
+			<a href="Where to find us.html">Where To Find Us</a>
+            <a href="Accessability.html#Privacy"> Privacy </a>
+		</nav>
+	</footer>
+    </body>
+</html>

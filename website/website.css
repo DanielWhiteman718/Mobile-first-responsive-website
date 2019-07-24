@@ -1,0 +1,283 @@
+/*Authors: Daniel Whiteman, Chloe Jambor */
+
+html {
+	margin:0;
+	padding:0;
+	height:100%;
+	width:100%;
+	overflow:hidden;
+}
+
+body {
+	height:100%;
+    min-width: 350px;
+	overflow:scroll;
+	overflow-x:hidden;
+}
+
+/*Styling for the header in the banner. Font size and padding from logo scale*/
+#myHeader{
+    white-space: nowrap;
+    overflow-x: auto;
+	font-size: calc(30px + 4.5vw);
+    color: black ;
+	font-family: BebasNeue, Helvetica,  sans-serif;
+	margin-top: 0px;
+	padding-top: 0px;
+    padding-left: 2%;
+    text-decoration: none; 
+}
+
+/*Styling the banner of the website. The formatting of the element
+  is included here as well and the colour scheme.
+*/
+.banner{
+	margin:0px auto;
+	padding:2%;
+    padding-bottom: 5%;
+	height:17%;
+	width:100%;
+	overflow:hidden;
+	border:solid;
+	background-color:rgb(0,150,255);
+	border-width: 0;
+}
+
+li {
+	font-size: 15px;
+	font-family: Arial, sans-serif;
+}
+
+/*Styling for the h2 tag.
+  The h2 tag is used in main body of content with
+  text so this is slightly enlarged and in a bold font
+*/
+h2 {
+    padding : 1em; 
+    flex-flow: row wrap; 
+	font-size: calc(20px + 2.5vw);
+    padding : 0.5em;
+    padding-bottom: 0;
+	font-family: BebasNeue, Helvetica,  sans-serif;
+}
+
+
+/*Styling for all the text that is on the website*/
+p {
+    padding: 0.25em; 
+	font-size: 15px;
+	font-family:Arial, sans-serif;
+}
+
+/*Styling for the logo in the banner*/
+header img{
+    padding: 0.25em;
+    width: 60px;
+    height: 60px;
+    padding-right: 2%;
+    float:left;  
+}
+
+/*Styling for all images*/
+ img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+/* on small screens pictures take up entire width */
+
+.secondpicture{
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    max-height: 350px;
+    height: auto;
+    padding:0.5 em;
+    
+    }
+    
+.underlined{
+    text-decoration: underline;
+    }
+
+
+#wrapper {
+    display: flex ;
+    flex-direction: column;
+	background-color: white;
+	width: 100 %;
+	border: 1px gray solid;
+	border-color: rgb(255,255,255);
+}
+
+a{
+    text-decoration: underline;
+}
+
+/* to style non links */
+
+.underlined{
+    text-decoration: underline;
+    }
+
+/*Styling for the navigation bars*/
+nav{
+    display: flex ; 
+    text-decoration: none; 
+    background-color:rgb(225, 229, 233) ;
+    flex-direction: row; 
+    flex-wrap: nowrap;
+    align-items: left;
+    justify-content: left;
+}
+
+nav a {
+    text-decoration: none;
+    white-space: nowrap ;
+	font-family: BebasNeue, Helvetica,  sans-serif;
+	font-size: calc(10px + 1vw );
+	color: #596365;
+    padding-left: calc(5px + 1vw);
+    padding-right: calc(5px + 1vw);
+    
+}
+
+/*When the user hovers over links in  the
+  navigation bars the the link is highlighted to make page engaging
+*/
+nav a:hover {
+	background-color: rgb(0,150,255);
+	border-radius: 5px;
+	color: rgb(0,0,0);
+	transition: 0.1s;
+}
+
+/* styling for displaying the navigation in the hamburger menu */
+
+#unopened{
+    display: none;
+}
+
+#opened{
+    display:flex !important;
+    flex-direction: column;
+    align-items: left;
+    
+}
+
+#mapLink:hover {
+	background-color: rgb(0,150,255);
+	border-radius: 5px;
+	color: rgb(0,0,0);
+    text-decoration: none; 
+}
+
+.open {
+	background-color: rgb(0,150,500);
+	border-radius: 5px;
+	color: rgb(0,0,0);
+}
+
+#menu{
+    max-height: 20px;
+}
+
+
+/*Styling for the footer. This specifies the size
+  and the background colour of the footer
+*/
+footer {
+  height: 10%;
+  background-color: rgb(225, 229, 233);
+  padding-top: 1em;
+  justify-content: start;
+   align-items: center;
+  
+}
+
+/* makes footer default veritcal 
+*/
+footer nav {
+    display: grid; 
+}
+
+/* All styling for the form on the contact us page */
+
+input:invalid {
+  border: 2px red;
+}
+
+#myForm{
+    padding: 1em;
+    font-family: Arial, sans-serif;
+    background-color: rgb(225, 229, 233);
+    border-radius: 5px;
+}
+
+#comments {
+    width: 300px; 
+    min-width: 60%;
+    min-height: 2em;
+    max-width: 100%;
+    max-height: 300px;
+}
+
+/*When no longer mobile size hamburger menu is replaced and footer is spread out  */
+
+@media only screen and (min-width: 650px) {
+    #wrapper{
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    
+    header img {
+		padding-left: 2em;
+		width: calc(50px + 4vw);
+		height:calc(50px + 4vw);
+    }
+    
+    header nav{
+        display: inline-block;
+        padding-right: 1em;
+        padding-left: 1em;
+    }
+    
+    #unopened{
+        display: inline;
+    }
+    
+    #menu{
+        display: none;}
+    
+    footer nav {
+		display: block;
+        font-size: 14px;
+		align-items: center;
+		justify-content: center;
+		padding-left:15%;
+		padding-right:15%;
+	}
+}
+
+/*On large screens images are floated around the text */
+@media only screen and (min-width: 1120px) {
+	main img{
+        float: right;
+		padding-left: 5%;
+		padding-bottom: 5%;
+    }
+    .secondpicture{
+        float:left;
+    }
+    
+}
+    
+/*Specifying the custom fonts*/
+
+@font-face {
+    font-family:'BebasNeue';
+    src: url('fonts/BebasNeue.otf');}

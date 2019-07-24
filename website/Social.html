@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+        <meta name="authors" content="Daniel Whiteman, Chloe Jambor">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+		<link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="website.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        
+		<title>Social</title>
+        
+        <!-- script to open and close hamburger menu -->
+        <script>
+            function navFunction(){   
+            var x  = document.getElementsByClassName("links")[0];
+            if (x.id ==="opened"){
+                x.id = "unopened";
+                }
+            else {
+                x.id="opened";
+                }
+            }
+        </script>
+	</head>
+	
+	<body>
+		
+		<div class="banner">
+			<header>
+                <!--Hamburger menu -->
+				<img src="img/myLogo.png" alt="Picture" width="50" height="50">
+				<h1><a href="index.html" id ="myHeader">Students' Union</a></h1>
+			</header>
+		</div>
+		
+		<nav>
+            <a id="menu" href="javascript:void(0);" onclick="navFunction()">
+                <i class="fas fa-bars"></i> 
+            </a>
+            
+            <!-- span used as an inline divider to create a class used in the script -->
+            <span class="links" id="unopened">
+                <a href="index.html" >Home</a>
+                <a href="Eating options.html">Eating Options</a>
+                <a href="Social.html" class="open">Social Events</a>
+                <a href="A week in the life.html">A Week In The Life</a>
+                <a href="Contact us.html">Contact Us</a>
+                <a href="Accessability.html">Accessability/Privacy</a>
+            </span>
+            
+        </nav>
+		
+		<!--This is the main body of content where the images and text will sit-->
+		<main id="wrapper">
+			<h2>Social Events</h2>
+			<div>
+				<aside>
+					<img src="img/barone.jpg" alt="Bar One Pictured" width= 500px height= 300px>
+				</aside>
+				<section>
+					<p>Bar One is the Students’ Union bar and is a great place to socialise throughout the week. The bar has a wide range of alcoholic and soft drinks as well as great food. Bar One has a wifi, comfy sofas and everything else you need. </p>
+					<p>Every Thursday is karaoke night which is free entry from 9pm till 1:30am. There is also a quiz night every Sunday. Every week there is a different theme. Again, this is free entry from 9pm till 11pm.</p>
+					<p id="Foundry">Foundry is music and club night venue at the Students’ Union. It has 3 rooms and multiple bars. Popular events such as Pop Tarts and Roar are some of the best student nights out in a safe and friendly environment.</p>
+				</section>
+				<aside>
+					<img src="img/barone2.jpg" alt="Bar One Pictured" class="secondpicture" width= 500px height= 300px>
+				</aside>
+			</div>
+		</main>
+		
+	<footer>
+		<nav>
+			<a href="Contact us.html">Contact Us</a>
+			<a href="Accessability.html">Accessability</a>
+			<a href="Where to find us.html">Where To Find Us</a>
+            <a href="Accessability.html#Privacy"> Privacy </a>
+		</nav>
+	</footer>
+    </body>
+</html>

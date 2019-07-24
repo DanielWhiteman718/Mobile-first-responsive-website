@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8"/>
+        <meta name="authors" content="Daniel Whiteman, Chloe Jambor">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="website.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+		<title>Find Us</title>
+        
+        <!-- script to open and close hamburger menu -->
+        <script>
+            function navFunction(){   
+            var x  = document.getElementsByClassName("links")[0];
+            if (x.id ==="opened"){
+                x.id = "unopened";
+                }
+            else {
+                x.id="opened";
+                }
+            }
+        </script>
+	</head>
+
+	<body>
+		
+		<div class="banner">
+			<header>
+                <!--Hamburger menu -->
+				<img src="img/myLogo.png" alt="Picture" width="50" height="50" id="picture">
+				<h1><a href="index.html" id ="myHeader">Students' Union</a></h1>
+			</header>
+		</div>
+		
+		<nav>
+            <a id="menu" href="javascript:void(0);" onclick="navFunction()">
+                <i class="fas fa-bars"></i> 
+            </a>
+            
+            <!-- span used as an inline divider to create a class used in the script -->
+            <span class="links" id="unopened">
+                <a href="index.html">Home</a>
+                <a href="Eating options.html">Eating Options</a>
+                <a href="Social.html">Social Events</a>
+                <a href="A week in the life.html">A Week In The Life</a>
+                <a href="Contact us.html">Contact Us</a>
+                <a href="Accessability.html">Accessability/Privacy</a>
+            </span>
+            
+        </nav>
+		
+		<!--There is a hyperlink to google maps on this page as well as a screenshot
+			of the building on google maps.
+		-->
+		<main id="wrapper">
+			<h2>Where You Can Find Us</h2>
+			<div>
+				<p>Address: Sheffield Students' Union Western Bank Sheffield S10 2TG <br>
+				<a href="https://www.google.com/maps/search/University+of+sheffiled+students+union/@53.380657,-1.4913114,16z" id="mapLink">Find us on Google Maps.</a></p>
+				<aside>
+					<img src="img/Map.jpg" alt="Map of Sheffield" width="500" height="300">
+				</aside>
+			</div>
+		</main>
+
+	<footer >
+            <nav>
+			<a href="Contact us.html">Contact Us</a>
+			<a href="Accessability.html">Accessability</a>
+			<a href="Where to find us.html">Where To Find Us</a>
+            <a href="Accessability.html#Privacy"> Privacy </a> 
+            </nav>
+	</footer> 
+    </body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="authors" content="Daniel Whiteman, Chloe Jambor">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="website.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        
+        <title>Accessability/Privacy</title>
+        
+        <!-- script to open and close hamburger menu -->
+        <script>
+            function navFunction(){   
+            var x  = document.getElementsByClassName("links")[0];
+            if (x.id ==="opened"){
+                x.id = "unopened";
+                }
+            else {
+                x.id="opened";
+                }
+            }
+        </script>
+        
+    </head>
+	
+    <body>
+	
+        <div class="banner">
+			<header>
+				<img src="img/myLogo.png" alt="Picture" width="50" height="50">
+				<h1><a href="index.html" id ="myHeader">Students' Union</a></h1>
+			</header>
+        </div>
+
+        <nav>
+            <!--Hamburger menu -->
+            <a id="menu" href="javascript:void(0);" onclick="navFunction()">
+                <i class="fas fa-bars"></i> 
+            </a>
+            
+            <!-- span used as an inline divider to create a class used in the script -->
+            
+            <span class="links" id="unopened">
+                <a href="index.html">Home</a>
+                <a href="Eating options.html">Eating Options</a>
+                <a href="Social.html">Social Events</a>
+                <a href="A week in the life.html">A Week In The Life</a>
+                <a href="Contact us.html">Contact Us</a>
+                <a href="Accessability.html" class="open" >Accessability/Privacy</a>
+            </span>
+            
+        </nav>
+		
+		<!--This is the main body of content where the images and text will sit-->
+		<!--This the accessability statement for the website-->
+		<main id="wrapper">
+			<h2>Our Accessability Statement</h2>
+				<section>
+					<p>We are fully committed to making the webpages accessible to all.</p>
+					<p>Our website aims to follow the guidelines set out by The Worldwide Web Consortium for making web content accessible for users with disabilities.</p>
+					<p>Should you have difficulty in accessing the content of this site, please detail the problem in a contact form on the<a href="Contact us.html"> Contact Us Page.</a></p>
+					<p><a href="https://www.w3.org/TR/WCAG/">Click here to see the guidelines for yourself.</a></p>
+					<p>Some features that we have included:</p>
+					<ul>
+						<li>Contrasting colours for the visually impaired</li>
+						<li>Alt tags to images for aid screen readers</li>
+						<li>Links are highlighted when you hover over them</li>
+						<li>The website will work on a wide range of browsers to support those using alternative browsers</li>
+					</ul> 
+				</section>
+			<h2>Privacy statement</h2>
+                <!-- id for bookmark  -->
+				<section id="Privacy">
+					<p>We are fully committed to making the website a secure and trustworthy place to hand over personal information.</p>
+					<p>To do this the website follows GDPR.</p>
+				</section>
+		</main>
+	<footer>
+		<nav>
+			<a href="Contact us.html">Contact Us</a>
+			<a href="Accessability.htere To Find Us</a>
+		</nav>ml">Accessability</a>
+			<a href="Where to find us.html">Where to find us </a>
+            <a href="Accessability.html#Privacy"> Privacy </a>
+            </nav>
+	</footer>
+    </body>
+</html>

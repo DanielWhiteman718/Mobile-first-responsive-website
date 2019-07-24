@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="authors" content="Daniel Whiteman, Chloe Jambor">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="website.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        
+        <title>A Week In The Life</title>
+        
+        <!-- script to open and close hamburger menu -->
+        <script>
+            function navFunction(){   
+            var x  = document.getElementsByClassName("links")[0];
+            if (x.id ==="opened"){
+                x.id = "unopened";
+                }
+            else {
+                x.id="opened";
+                }
+            }
+        </script>
+        
+    </head>
+	
+    <body>
+		
+        <div class="banner">
+			<header>
+				<img src="img/myLogo.png" alt="Picture" width="50" height="50">
+				<h1><a href="index.html" id ="myHeader">Students' Union</a></h1>
+			</header>
+        </div>
+		<nav>
+        <!--Hamburger menu -->
+            <a id="menu" href="javascript:void(0);" onclick="navFunction()">
+                <i class="fas fa-bars"></i> 
+            </a>
+            <!-- span used as an inline divider to create a class used in the script -->
+            <span class="links" id="unopened">
+                <a href="index.html" >Home</a>
+                <a href="Eating options.html">Eating Options</a>
+                <a href="Social.html">Social Events</a>
+                <a href="A week in the life.html" class="open" >A Week In The Life</a>
+                <a href="Contact us.html">Contact Us</a>
+                <a href="Accessability.html">Accessability/Privacy</a>
+            </span>
+        </nav>
+		
+		<main id="wrapper">
+			<h2>A Week In The Life</h2>
+				<p>In the morning a student could collect their coffee from the SU shop or Interval café to give themselves an energy boost before a day of studying and lectures.</p>
+                <img src="img/coffeerev1.jpg" alt ="Student Cafe Coffee Revoltuion" width= 400px height= 200px>
+				<p>Throughout the week a Computer Science student could grab delicious food from the Students’ Union building. Great lunch and dinner options are detailed on the <a href="Eating options.html">Eating</a> options page. There are many options available to suit all diets at a student friendly price.</p>
+                <img src="img/newleaf.jpg" alt="Union Building's New Leaf" width= 500px height= 300px class="secondpicture">
+				<p>There are also places to study in the Students’ Union building. PCs are available as well as bookable rooms for team meetings and group projects.</p>
+				<p>In the evenings and weekends, <a href="Social.html" class="subtleLink">Bar One</a> and <a href="Social.html#Foundry">Foundry </a>are perfect venues for socialising with fellow students in a safe and fun environment. Events like Roar and Pop Tarts at Foundry and Bar One’s quiz night are always great events.</p>
+		</main>
+    
+	<footer>
+		<nav>
+			<a href="Contact us.html">Contact Us</a>
+			<a href="Accessability.html">Accessability</a>
+			<a href="Where to find us.html">Where To Find Us</a>
+            <a href="Accessability.html#Privacy"> Privacy </a>
+		</nav>
+	</footer> 
+    </body>
+</html>

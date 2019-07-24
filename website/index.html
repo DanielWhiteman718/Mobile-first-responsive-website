@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="authors" content="Daniel Whiteman, Chloe Jambor">
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="website.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        
+        <meta charset="utf-8"/>
+        <title>Home</title>
+        
+        <!-- script to open and close hamburger menu -->
+        <script>
+            function navFunction(){   
+            var x  = document.getElementsByClassName("links")[0];
+            if (x.id ==="opened"){
+                x.id = "unopened";
+                }
+            else {
+                x.id="opened";
+                }
+            }
+        </script>
+        
+    </head>
+	
+    <body>
+		
+        <div class="banner">
+        <!--The Heading is also a link to the home page-->
+			<header>
+                <!--Hamburger menu -->
+                <img src="img/myLogo.png" alt="Picture" width="50" height="50">
+				<h1><a href="index.html" id ="myHeader">Students' Union</a></h1>
+			</header>
+		</div>
+		
+        <nav>
+            <a id="menu" href="javascript:void(0);" onclick="navFunction()">
+                <i class="fas fa-bars"></i> 
+            </a>
+            
+            <!-- span used as an inline divider to create a class used in the script -->
+            <span class="links" id="unopened">
+                <a href="index.html" class="open">Home</a>
+                <a href="Eating options.html">Eating Options</a>
+                <a href="Social.html">Social Events</a>
+                <a href="A week in the life.html">A Week In The Life</a>
+                <a href="Contact us.html">Contact Us</a>
+                <a href="Accessability.html">Accessability/Privacy</a>
+            </span>
+            
+        </nav>
+        
+		<div id="wrapper">
+        <main> 
+             <h2>Welcome!</h2>
+             <div>
+             <aside>
+             <img src="img/sufront.jpg" alt ="Picture of the Student's Union" width= 500px height= 300px>
+			 </aside>
+             <section>
+             <p>This is your guide to the Student’s Union building as a computer science student at the University of Sheffield. On this website you can find all the information you need about the students’ union building.</p>
+             <p>The award-winning Students' Union offers you a huge range of clubs, societies and volunteering opportunities. The building itself is home to The Foundry and Bar One which put on lots of social events each week giving you the opportunity to meet new people and enjoy your down time.</p>
+			 <p>There are lots of different eating options at the Students’ Union and they  accommodate for those with special dietary requirements such as vegetarians, vegans and Muslims. </p>
+			 <p>You can also find plenty of support at the SU building for anything you may be struggling with in your student life.</p>
+             <p> You may also find it useful to check the official <a href= "https://su.sheffield.ac.uk/">Sheffield Student's Union</a> page to find more general information </p>
+			 </section>
+			 <aside>
+             <img src="img/sudesk.jpg" class="secondpicture" width= 500px height= 300px>
+			 </aside>
+             </div>   
+        </main>
+		</div>		
+	
+	<footer>
+		<nav>
+			<a href="Contact us.html">Contact Us</a>
+			<a href="Accessability.html">Accessability</a>
+			<a href="Where to find us.html">Where To Find Us</a>
+            <a href="Accessability.html#Privacy"> Privacy </a>
+		</nav>
+	</footer>
+    </body>
+</html>
